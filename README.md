@@ -1,6 +1,6 @@
 # NES 模拟器
 
-[English](./readme_en.md)
+[English](README_en.md)
 
 这是一个基于正点原子 NES 模拟器的项目。原项目的 CPU 使用 ARM 汇编编写，无法移植到其他平台。本项目使用 C 语言重写了 CPU 部分，
 **旨在方便移植到各种嵌入式设备**（如 STM32、ESP32 等）。

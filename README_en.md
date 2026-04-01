@@ -1,6 +1,6 @@
 # NES Emulator
 
-[中文](readme.md)
+[中文](README.md)
 
 This is a NES emulator project based on Zhongdian Yuanzi's NES emulator. The original project used ARM assembly for CPU,
 making it impossible to port to other platforms. This project rewrote the CPU part in C language, **designed for easy
