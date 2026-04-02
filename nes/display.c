@@ -7,7 +7,7 @@
 #include <string.h>
 
 #define WIDTH  256
-#define HEIGHT 250
+#define HEIGHT 270
 #define PIXELS (WIDTH * HEIGHT)
 
 static HWND g_hwnd = NULL;
