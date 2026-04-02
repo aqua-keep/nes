@@ -37,9 +37,25 @@ nes/
 └── mapper/         - 各 Mapper 实现
 ```
 
-## 运行测试
+## 运行截图
 
-将 NES ROM 文件放入 rom 目录，运行程序加载即可。
+### Mapper 0 - 超级马利兄弟
+![](img/0.png)
+
+### Mapper 1 - 雪人兄弟
+![](img/1.png)
+
+### Mapper 2 - 小美人鱼
+![](img/2.png)
+
+### Mapper 4 - 最终幻想3
+![](img/4.png)
+
+### Mapper 15 - 岳飞传
+![](img/15.png)
+
+### Mapper 23 - 魂斗罗1
+![](img/23.png)
 
 ---
 

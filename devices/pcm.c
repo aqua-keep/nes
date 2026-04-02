@@ -223,11 +223,3 @@ int pcm_play_file(const char* filename)
     return 0;
 }
 
-void test_pcm()
-{
-    // 注意：测试 PCM 时使用 16000，但在游戏中必须使用 NES 的 44100
-    pcm_init(16000);
-    pcm_play_file("../rom/rssq.pcm");
-    Sleep(100000);
-    pcm_cleanup();
-}

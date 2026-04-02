@@ -41,7 +41,7 @@ void pcm_stop(void);
  * @brief 清理资源
  */
 void pcm_cleanup(void);
-void test_pcm();
+
 #ifdef __cplusplus
 }
 #endif

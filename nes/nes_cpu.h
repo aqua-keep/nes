@@ -1,5 +1,5 @@
-#ifndef NES_NES_CPU_H
-#define NES_NES_CPU_H
+#ifndef NES_CPU_H
+#define NES_CPU_H
 
 #include <stdint.h>
 #include <stdbool.h>
@@ -13,7 +13,6 @@ extern "C" {
 
 // 控制是否非官方指令（0=关闭，1=开启）
 #define ENABLE_ILLEGAL_OPCODE 1
-
 
 // ----------------- 常量、标志位 -----------------
 #define FLAG_C 0x01  // Carry Flag（进位标志）
@@ -73,4 +72,4 @@ void K6502_Write(uint16_t addr, uint8_t val); // 直接内存读写（被其他�
 #ifdef __cplusplus
 }
 #endif
-#endif //NES_NES_CPU_H
+#endif //NES_CPU_H

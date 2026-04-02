@@ -14,24 +14,25 @@ int main()
 
     // mapper0
     // nes_load("../rom/LanMaster.nes");
-    nes_load("../rom/cjml.nes");
-    // nes_load("../rom/tkdz.nes");
-    // nes_load("../rom/dkq2.nes");
-    // nes_load("../rom/cdr.nes");
-    // nes_load("../rom/zxd.nes");
+    // nes_load("../rom/[234]  角色类 - 超级马利兄弟.NES");
 
     // mapper1
-    // nes_load("../rom/tly.nes");
+    // nes_load("../rom/[152]  角色类 - 雪人兄弟.NES");
 
     // mapper2
-    // nes_load("../rom/hdl.nes");
+    // nes_load("../rom/[155]  角色类 - 小美人鱼.nes");
 
     // mapper3
-    // nes_load("../rom/mxd.nes");
-    // nes_load("../rom/elsfk.nes");
+    // nes_load("../rom/[022]  桌面类 - 俄罗斯方块.NES");
 
-    // // mapper4
-    // nes_load("../rom/yjs.nes");
+    // mapper4
+    // nes_load("../rom/[031]  智力类 - 最终幻想3  .NES");
+
+    // mapper15
+    // nes_load("../rom/[037]  智力类 - 岳飞传.NES");
+
+    // mapper23
+    // nes_load("../rom/[218]  角色类 - 魂斗罗1.nes");
 
     // test_pcm();
 }

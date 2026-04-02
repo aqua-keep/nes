@@ -38,9 +38,25 @@ nes/
 └── mapper/         - Mapper Implementations
 ```
 
-## Running Tests
+## Screenshots
 
-Place NES ROM files in the rom directory and run the program to load them.
+### Mapper 0 - Super Mario Bros
+![](img/0.png)
+
+### Mapper 1 - Snow Bros
+![](img/1.png)
+
+### Mapper 2 - The Little Mermaid
+![](img/2.png)
+
+### Mapper 4 - Final Fantasy III
+![](img/4.png)
+
+### Mapper 15 - Yue Fei Zhuan
+![](img/15.png)
+
+### Mapper 23 - Contra 1
+![](img/23.png)
 
 ---
 
