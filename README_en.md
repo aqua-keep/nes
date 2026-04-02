@@ -11,13 +11,7 @@ porting to various embedded devices** (such as STM32, ESP32, etc.).
 0, 1, 2, 3, 4, 6, 7, 8, 11, 13, 15, 16, 17, 18, 19, 21, 22, 23, 24, 25, 32, 33, 34, 64, 65, 66, 67, 69, 70, 71, 72, 73,
 75, 76, 78, 79, 85, 87, 88, 99, 113, 189, 225, 227, 240, 245
 
-**Note**: All supported Mapper ROMs can display graphics properly, but currently no sound output.
 
-## Known Issues
-
-- Audio cannot play
-
-Most games run fine except for the audio issue.
 
 ## Game Controls
 
