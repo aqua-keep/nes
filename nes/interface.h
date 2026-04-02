@@ -1,7 +1,3 @@
-//
-// Created by Yang on 2025/12/4.
-//
-
 #ifndef NES_INTERFACE_H
 #define NES_INTERFACE_H
 
