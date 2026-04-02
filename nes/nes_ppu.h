@@ -9,19 +9,7 @@
 //技术论坛:www.openedv.com
 //创建日期:2014/7/1
 //版本：V1.0  			  
-////////////////////////////////////////////////////////////////////////////////// 	 
-
-
-#undef   NULL
-#define  NULL 0
-
-#ifndef  TRUE
-#define  TRUE     1
-#endif
-#ifndef  FALSE
-#define  FALSE    0
-#endif
-
+//////////////////////////////////////////////////////////////////////////////////
 static const unsigned int NES_Palette[64] =
 {
     0x73AE, 0x20D1, 0x0015, 0x4013, 0x880E, 0xA802, 0xA000, 0x7840,
@@ -93,24 +81,24 @@ uint32_t bg_enabled(void);
 void set_name_table(uint8_t bank, int bank_num);
 void set_tile_bank(int i, uint8_t* bank);
 void compile(int count, uint8_t* src, uint8_t* dest);
-void set_tile_banks(uint8_t * bank0, uint8_t * bank1, uint8_t * bank2, uint8_t * bank3,
-                    uint8_t * bank4, uint8_t * bank5, uint8_t * bank6, uint8_t * bank7);
+void set_tile_banks(uint8_t* bank0, uint8_t* bank1, uint8_t* bank2, uint8_t* bank3,
+                    uint8_t* bank4, uint8_t* bank5, uint8_t* bank6, uint8_t* bank7);
 void PPU_reset(void);
 void PPU_start_frame(void);
 void set_mirroring(uint32_t nt0, uint32_t nt1, uint32_t nt2, uint32_t nt3); //设置垂直水平镜像
 uint8_t ReadLowRegs(uint32_t addr);
 void WriteLowRegs(uint32_t addr, uint8_t data);
 void scanline_draw(int LineNo);
-void do_scanline_and_draw(uint8_t * buf);
+void do_scanline_and_draw(uint8_t* buf);
 
 // Rick
 void start_frame(uint8_t* buf, int ypitch);
-void end_frame(uint8_t * buf);
+void end_frame(uint8_t* buf);
 void do_scanline_and_dont_draw(int LineNo);
 uint32_t NMI_enabled(void);
 void start_vblank(void);
 void end_vblank(void);
-void render_bg(uint8_t * buf);
-void render_spr(uint8_t * buf);
+void render_bg(uint8_t* buf);
+void render_spr(uint8_t* buf);
 void update_tile(int byteOffset, uint8_t data);
 #endif

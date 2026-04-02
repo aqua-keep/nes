@@ -7,11 +7,11 @@ static uint8_t joy1_shift; // 手柄2移位寄存器
 static uint8_t A, X, Y, S, P;
 static uint16_t PC;
 static uint8_t temp8;
-static uint16_t temp16; // Used for effective address (EA)
+static uint16_t temp16; // 用于有效地址（EA）
 static int g_page_crossed = 0;
 static uint16_t g_bad_addr = 0;
 #if ENABLE_ILLEGAL_OPCODE
-static int cpu_jam = 0; // CPU Jam state for KIL instructions
+static int cpu_jam = 0; // CPU 指令队列中KIL指令的拥塞状态
 #endif
 #define PAGE_CROSS(a, b) ((((a) ^ (b)) & 0x100) != 0)
 #define READ_WORD(addr) (K6502_Read(addr) | (K6502_Read((addr) + 1) << 8))
@@ -178,7 +178,7 @@ static void CMP(uint8_t a, uint8_t b)
 	setNZ(temp8);
 }
 
-// ---------------- Addressing Modes ----------------
+// ---------------- 寻址方式 ----------------
 static void am_IMP(void)
 {
 }
@@ -286,7 +286,7 @@ static void am_IND(void)
 	temp16 = (high << 8) | low;
 }
 
-// ---------------- Operations ----------------
+// ---------------- 官方指令 ----------------
 static void op_ADC(void)
 {
 	if (g_page_crossed)
@@ -680,7 +680,7 @@ static void op_TYA(void)
 	setNZ(A);
 }
 
-// ---------------- Illegal Operations ----------------
+// ---------------- 非法指令 ----------------
 #if ENABLE_ILLEGAL_OPCODE
 // NOP Read: NOPs that read memory (side effects)
 static void op_NRD(void)
@@ -792,7 +792,6 @@ static void op_ALR(void)
 }
 
 // ARR: AND immediate then ROR A
-// Complex flag behavior
 static void op_ARR(void)
 {
 	A &= K6502_Read(temp16);
@@ -807,7 +806,6 @@ static void op_ARR(void)
 }
 
 // XAA: TXA then AND immediate (A = X & Imm)
-// Behavior varies by CPU revision, this is a common stable implementation.
 static void op_XAA(void)
 {
 	A = X & K6502_Read(temp16);
@@ -891,7 +889,7 @@ static void op_LAS(void)
 static void op_KIL(void)
 {
 	cpu_jam = 1;
-	PC--; // Stay on current instruction
+	PC--; // 保持当前指令
 }
 #endif
 
@@ -1102,7 +1100,7 @@ void run6502(uint32_t cyc)
 	while (clocks < target_cycles)
 	{
 #if ENABLE_ILLEGAL_OPCODE
-		if (cpu_jam) return; // Stop if CPU is jammed
+		if (cpu_jam) return; // 如果 CPU 被卡住则停止
 #endif
 
 		if (cpunmi)
